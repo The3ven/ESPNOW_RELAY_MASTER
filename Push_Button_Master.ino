@@ -17,7 +17,10 @@
 #define BUTTON_PIN D2
 #define LED_PIN D4 // active LOW
 
-uint8_t relayMAC[] = {0x5C, 0xCF, 0x7F, 0xFC, 0xB5, 0x5F};
+// A8:48:FA:C0:A1:FB <- Slave Mac
+// 44:17:93:15:F0:CA <- Master Mac
+
+uint8_t relayMAC[] = {0xA8, 0x48, 0xFA, 0xC0, 0xA1, 0xFB};
 
 /* ================= PROTOCOL ================= */
 struct Message
